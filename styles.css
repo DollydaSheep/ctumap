@@ -1,0 +1,39 @@
+.pathway{
+    visibility: hidden;
+}
+html{
+    overflow: hidden;
+}
+body{
+}
+text{
+    pointer-events: none;
+}
+.div1{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+rect{
+    fill: transparent;
+}
+rect:hover{
+    fill: red;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 200px;
+    height: 80vh;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 1;
+}
+.room:hover{
+    fill: red;
+}

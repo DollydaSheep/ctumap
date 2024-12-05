@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .pathway{
     visibility: hidden;
 }
@@ -5,6 +10,7 @@ html{
     overflow: hidden;
 }
 body{
+
 }
 text{
     pointer-events: none;
@@ -14,6 +20,7 @@ text{
     width: 100%;
     height: 100vh;
     z-index: -1;
+    transition: 0.3s;
 }
 rect{
     fill: transparent;
@@ -23,17 +30,65 @@ rect:hover{
 }
 .search{
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     width: 200px;
     height: 80vh;
     position: absolute;
     right: 10px;
     top: 10px;
-    border: 1px solid black;
-    background-color: white;
+    /* border: 1px solid black;
+    background-color: white; */
     z-index: 1;
 }
+input{
+    margin: 1em;
+}
+.search-container{
+    width: 90%;
+    max-height: 100%;
+    margin-bottom: 1em;
+    overflow-y: hidden;
+    background-color: blue;
+    border-radius: 5px;
+}
+.search-element{
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+    height: 2em;
+    cursor: pointer;
+}
+.search-element:hover{
+    background-color: rgb(105, 13, 13);
+}
 .room:hover{
-    fill: red;
+    fill: red !important;
+}
+
+.floorbutton{
+    display: flex;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    transition: 0.3s;
+}
+.floorbutton h1{
+    width: 1em;
+    height: 1em;
+    margin: 0.5em;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.second{
+    background-color: blue;
+    z-index: 30;
+    opacity: 0;
+}
+.first{
+    opacity: 1;
 }

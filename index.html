@@ -13,9 +13,15 @@
     </div>
 
     <div class="search">
-        <input type="text" placeholder="Search Chat">
+        <input type="text" class="searchinput" placeholder="Search Chat" oninput="updateLegend()">
+        <div class="search-container">
+            
+        </div>
     </div>
-
+    <div class="floorbutton">
+        <h1 onclick="minusFloor()">-</h1>
+        <h1 onclick="plusFloor()">+</h1>
+    </div>
     
     <div class="div1">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -28,56 +34,132 @@
             .st4{font-family:'MyriadPro-Regular';}
             .st5{font-size:10px;font-weight: bold;}
             .st6{display:none;}
-            .st7{display:inline;}
+            .st7{display:inline;font-size: 10px;font-weight: bold;}
         </style>
-        <g id="Layer_1">
+        <!-- 2nd floor -->
+        <g id="Layer_2" class="second">
+            <g id="Layer_1_00000125590715547164002530000000152844604620788410_">
+                <g>
+                    <polygon class="st0" points="645.9,1023.3 645.9,703.6 801.3,703.6 801.3,930.4 1188.2,930.4 1188.2,496.5 1342.7,496.5 
+                        1342.7,1023.3 			"/>
+                    <path d="M1342.2,497v525.8H646.4V704.1h154.5v225.8v1h1h385.9h1v-1V497H1342.2 M1343.2,496h-155.5v433.9H801.8V703.1H645.4v320.7
+                        h697.8V496L1343.2,496z"/>
+                </g>
+                <g>
+                    <rect x="801.2" y="967.3" class="st0" width="63" height="56"/>
+                    <path d="M863.7,967.8v55h-62v-55H863.7 M864.7,966.8h-64v57h64V966.8L864.7,966.8z"/>
+                </g>
+                <g>
+                    <rect x="646.7" y="967.3" class="st0" width="154.5" height="56"/>
+                    <path d="M800.7,967.8v55H647.2v-55H800.7 M801.7,966.8H646.2v57h155.5V966.8L801.7,966.8z"/>
+                </g>
+                <g>
+                    <rect x="865.2" y="967.3" class="st0" width="63.5" height="56"/>
+                    <path d="M928.2,967.8v55h-62.5v-55H928.2 M929.2,966.8h-64.5v57h64.5V966.8L929.2,966.8z"/>
+                </g>
+                <path class="st1" d="M876.7,997.3"/>
+                <rect x="646.7" y="932.3" class="st2" width="77" height="35"/>
+                <g>
+                    <rect x="646.7" y="791.8" class="st0" width="76" height="73"/>
+                    <path d="M722.2,792.3v72h-75v-72H722.2 M723.2,791.3h-77v74h77V791.3L723.2,791.3z"/>
+                </g>
+                <g>
+                    <rect x="646.7" y="704.3" class="st0" width="76" height="86.5"/>
+                    <path d="M722.2,704.8v85.5h-75v-85.5H722.2 M723.2,703.8h-77v87.5h77V703.8L723.2,703.8z"/>
+                </g>
+                <g>
+                    <rect x="646.7" y="865.8" class="st0" width="76" height="27.5"/>
+                    <path d="M722.2,866.3v26.5h-75v-26.5H722.2 M723.2,865.3h-77v28.5h77V865.3L723.2,865.3z"/>
+                </g>
+                <rect x="1068.7" y="967.3" class="st2" width="62" height="56"/>
+                <line class="st2" x1="1189.7" y1="967.3" x2="1189.7" y2="1023.3"/>
+                <polygon class="st2" points="1342.7,932.3 1342.7,1023.3 1189.7,1023.3 1189.7,967.3 1283.7,967.3 1283.7,932.3 		"/>
+                <rect x="1260.7" y="865.3" class="st3" width="82" height="28"/>
+                <rect x="1260.7" y="812.3" class="st3" width="82" height="53"/>
+                <rect x="1260.7" y="760.3" class="st3" width="82" height="52"/>
+                <rect x="1260.7" y="644.3" class="st3" width="82" height="75"/>
+                <rect x="1260.7" y="607.3" class="st3" width="82" height="37"/>
+                <rect x="1260.7" y="573.3" class="st3" width="82" height="34"/>
+                <rect x="1260.7" y="539.3" class="st3" width="82" height="34"/>
+                <rect x="1260.7" y="497.3" class="st3" width="82" height="42"/>
+            </g>
+            <g id="Layer_1_00000017477629893880739000000007562693438820952499_">
+                <g>
+                    <polygon class="st0" points="645.7,1023.3 645.7,703.6 801.2,703.6 801.2,930.4 1188.1,930.4 1188.1,496.5 1342.6,496.5 
+                        1342.6,1023.3 			"/>
+                    <path d="M1342.1,497v525.8H646.2V704.1h154.5v225.8v1h1h385.9h1v-1V497H1342.1 M1343.1,496h-155.5v433.9H801.7V703.1H645.2v320.7
+                        h697.8V496L1343.1,496z"/>
+                </g>
+                <g class="st4">
+                    <rect x="801.1" y="967.3" class="st5" width="63" height="56"/>
+                    <path class="st6" d="M863.6,967.8v55h-62v-55H863.6 M864.6,966.8h-64v57h64V966.8L864.6,966.8z"/>
+                </g>
+                <g class="st4">
+                    <rect x="646.6" y="967.3" class="st5" width="154.5" height="56"/>
+                    <path class="st6" d="M800.6,967.8v55H647.1v-55H800.6 M801.6,966.8H646.1v57h155.5V966.8L801.6,966.8z"/>
+                </g>
+                <g class="st4">
+                    <rect x="865.1" y="967.3" class="st5" width="63.5" height="56"/>
+                    <path class="st6" d="M928.1,967.8v55h-62.5v-55H928.1 M929.1,966.8h-64.5v57h64.5V966.8L929.1,966.8z"/>
+                </g>
+                <path class="st1" d="M876.6,997.3"/>
+                <path class="st2" d="M646.6,967.3"/>
+                <path class="st2" d="M723.6,967.3"/>
+                <g>
+                    <rect x="646.6" y="791.8" class="st0" width="76" height="73"/>
+                    <path d="M722.1,792.3v72h-75v-72H722.1 M723.1,791.3h-77v74h77V791.3L723.1,791.3z"/>
+                </g>
+                <g>
+                    <rect x="646.6" y="704.3" class="st0" width="76" height="86.5"/>
+                    <path d="M722.1,704.8v85.5h-75v-85.5H722.1 M723.1,703.8h-77v87.5h77V703.8L723.1,703.8z"/>
+                </g>
+                <g>
+                    <rect x="646.6" y="865.8" class="st0" width="76" height="27.5"/>
+                    <path d="M722.1,866.3v26.5h-75v-26.5H722.1 M723.1,865.3h-77v28.5h77V865.3L723.1,865.3z"/>
+                </g>
+                <path class="st2" d="M1189.6,1023.3"/>
+                <path class="st2" d="M1189.6,967.3"/>
+                <path class="st2" d="M1342.4,1023.6h-153l-122.6-0.5v-55.5h121 M1187.7,967.6h1.7h94v-35h59v91"/>
+                <rect x="1260.6" y="865.3" class="st3" width="82" height="28"/>
+                <rect x="1260.6" y="812.3" class="st3" width="82" height="53"/>
+                <rect x="1260.6" y="760.3" class="st3" width="82" height="52"/>
+                <rect x="1260.6" y="644.3" class="st3" width="82" height="75"/>
+                <rect x="1260.6" y="607.3" class="st3" width="82" height="37"/>
+                <rect x="1260.6" y="573.3" class="st3" width="82" height="34"/>
+                <rect x="1260.6" y="539.3" class="st3" width="82" height="34"/>
+                <rect x="1260.6" y="497.3" class="st3" width="82" height="42"/>
+                <path class="st2" d="M751.3,849.6"/>
+                <path class="st3" d="M723.6,971"/>
+                <path class="st3" d="M646.6,971.1"/>
+                <polygon class="st3" points="646.6,960.3 646.6,925.3 723.6,925.3 723.6,960.3 723.6,967 929.1,967.6 929.1,1023.6 646.1,1022.6 
+                    646.6,967.1 		"/>
+            </g>
+            <rect x="1260.7" y="719.3" class="st3" width="82" height="41"/>
+            <text transform="matrix(1 0 0 1 1272.2637 522.7202)" class="st7 st8">CME Office</text>
+            <text transform="matrix(1 0 0 1 1273.176 561.2556)" class="st7 st8">EN CME 201</text>
+            <text transform="matrix(1 0 0 1 1273.176 594.6844)" class="st7 st8">EN CME 202</text>
+            <text transform="matrix(1 0 0 1 1274.0885 629.4271)" class="st7 st8">EN CME 203</text>
+            <text transform="matrix(1 0 0 1 1285.4287 673)" class="st7 st8">Glass</text>
+            <text transform="matrix(1 0 0 1 1283.1951 743.6562)" class="st7 st8">Faculty</text>
+            <text transform="matrix(1 0 0 1 1263.8311 783.6448)"><tspan x="0" y="0" class="st7 st8">COE Chairman’s</tspan><tspan x="0" y="14.4" class="st7 st8">Office</tspan></text>
+            <text transform="matrix(1 0 0 1 1264.6943 835.2345)"><tspan x="0" y="0" class="st7 st8">COE Dean </tspan><tspan x="0" y="14.4" class="st7 st8">Office</tspan></text>
+            <text transform="matrix(1 0 0 1 1279.1074 884.5)" class="st7 st8">Men’s CR </text>
+            <text transform="matrix(1 0 0 1 1160.9554 995.5714)" class="st7 st8">Ambut Office </text>
+            <text transform="matrix(1 0 0 1 743.0311 998.0054)" class="st7 st8">Ambut Office</text>
+            <text transform="matrix(1 0 0 1 660.1953 882.2998)" class="st7 st8">Men’s CR</text>
+            <text transform="matrix(1 0 0 1 666.7938 822.1211)"><tspan x="0" y="0" class="st7 st8">Ambut</tspan><tspan x="0" y="14.4" class="st7 st8">Room</tspan></text>
+            <text transform="matrix(1 0 0 1 667.7059 743.8457)"><tspan x="0" y="0" class="st7 st8">Ambut </tspan><tspan x="0" y="14.4" class="st7 st8">Room</tspan></text>
+        </g>
+
+
+        <!-- 1st floor -->
+        <g id="Layer_1" class="first">
             <g>
                 <polygon class="st0" points="645.67,1023.5 645.67,703.79 801.15,703.79 801.15,930.59 1188,930.59 1188,496.71 1342.5,496.71 
                     1342.5,1023.5 		"/>
                 <path d="M1342,497.21V1023H646.17V704.29h154.48v225.8v1h1h385.85h1v-1V497.21H1342 M1343,496.21h-155.5v433.88H801.65v-226.8
                     H645.17V1024H1343V496.21L1343,496.21z"/>
             </g>
-            <g>
-                <rect x="1004.1" y="703" class="st0 room" width="100.5" height="56.6"/>
-                <path d="M1104.1,703.5v55.6h-99.5v-55.6H1104.1 M1105.1,702.5h-101.5v57.6h101.5V702.5L1105.1,702.5z"/>
-            </g>
-            <g>
-                <rect x="1004.1" y="645" class="st0 room" width="100.5" height="57"/>
-                <path d="M1104.1,645.5v56h-99.5v-56H1104.1 M1105.1,644.5h-101.5v58h101.5V644.5L1105.1,644.5z"/>
-            </g>
-            <g>
-                <rect x="1004.1" y="574" class="st0 room" width="100.5" height="70"/>
-                <path d="M1104.1,574.5v69h-99.5v-69H1104.1 M1105.1,573.5h-101.5v71h101.5V573.5L1105.1,573.5z"/>
-            </g>
-            <g>
-                <rect x="1004.1" y="496.71" class="st0 room" width="100.5" height="76.29"/>
-                <path d="M1104.1,497.21v75.29h-99.5v-75.29H1104.1 M1105.1,496.21h-101.5v77.29h101.5V496.21L1105.1,496.21z"/>
-            </g>
-            <g>
-                <rect x="802.15" y="496.71" class="st0 room" width="157.6" height="47.59"/>
-                <path d="M959.25,497.21v46.59h-156.6v-46.59H959.25 M960.25,496.21h-158.6v48.59h158.6V496.21L960.25,496.21z"/>
-            </g>
-            <g>
-                <rect x="1188.07" y="36.5" class="st0 room" width="154.43" height="341.67"/>
-                <path d="M1342,37v340.67h-153.43V37H1342 M1343,36h-155.43v342.67H1343V36L1343,36z"/>
-            </g>
-            <g>
-                <rect x="645.67" y="277.5" class="st0 room" width="499.11" height="100.67"/>
-                <path d="M1144.28,278v99.67H646.17V278H1144.28 M1145.28,277H645.17v101.67h500.11V277L1145.28,277z"/>
-            </g>
-            <g>
-                <rect x="310.5" y="328.5" class="st0 room" width="203.06" height="374.29"/>
-                <path d="M513.06,329v373.29H311V329H513.06 M514.06,328H310v375.29h204.06V328L514.06,328z"/>
-            </g>
-            <g>
-                <rect x="1004.5" y="425.5" class="st0 room" width="154" height="45"/>
-                <path d="M1158,426v44h-153v-44H1158 M1159,425h-155v46h155V425L1159,425z"/>
-            </g>
-            <g>
-                <rect x="1639.5" y="425.5" class="st0 room" width="230" height="598"/>
-                <path d="M1869,426v597h-229V426H1869 M1870,425h-231v599h231V425L1870,425z"/>
-            </g>
-            <rect x="87.5" y="801.5" class="st1 room" width="223" height="223"/>
             <g>
                 <rect x="801" y="967.5" class="st0 room" width="63" height="56"/>
                 <path d="M863.5,968v55h-62v-55H863.5 M864.5,967h-64v57h64V967L864.5,967z"/>
@@ -130,7 +212,53 @@
             <text transform="matrix(1 0 0 1 1286.8574 593.5713)" class="st4 st5">EL LAB</text>
             <text transform="matrix(1 0 0 1 1287.2861 559.1426)" class="st4 st5">EN 102</text>
             <text transform="matrix(1 0 0 1 1288.4287 518.5713)" class="st4 st5">EN 101</text>
+            <g id="Text">
+                <text transform="matrix(1 0 0 1 1245.7139 998)" class="st4 st5">CLINIC</text>
+                <text transform="matrix(1 0 0 1 1142.8574 998.4287)" class="st4 st5">OFFICE</text>
+                <text transform="matrix(1 0 0 1 1071.1426 998.7139)" class="st4 st5">REGISTRAR</text>
+            </g>
         </g>
+        <g>
+            <rect x="1004.1" y="703" class="st0 room" width="100.5" height="56.6"/>
+            <path d="M1104.1,703.5v55.6h-99.5v-55.6H1104.1 M1105.1,702.5h-101.5v57.6h101.5V702.5L1105.1,702.5z"/>
+        </g>
+        <g>
+            <rect x="1004.1" y="645" class="st0 room" width="100.5" height="57"/>
+            <path d="M1104.1,645.5v56h-99.5v-56H1104.1 M1105.1,644.5h-101.5v58h101.5V644.5L1105.1,644.5z"/>
+        </g>
+        <g>
+            <rect x="1004.1" y="574" class="st0 room" width="100.5" height="70"/>
+            <path d="M1104.1,574.5v69h-99.5v-69H1104.1 M1105.1,573.5h-101.5v71h101.5V573.5L1105.1,573.5z"/>
+        </g>
+        <g>
+            <rect x="1004.1" y="496.71" class="st0 room" width="100.5" height="76.29"/>
+            <path d="M1104.1,497.21v75.29h-99.5v-75.29H1104.1 M1105.1,496.21h-101.5v77.29h101.5V496.21L1105.1,496.21z"/>
+        </g>
+        <g>
+            <rect x="802.15" y="496.71" class="st0 room" width="157.6" height="47.59"/>
+            <path d="M959.25,497.21v46.59h-156.6v-46.59H959.25 M960.25,496.21h-158.6v48.59h158.6V496.21L960.25,496.21z"/>
+        </g>
+        <g>
+            <rect x="1188.07" y="36.5" class="st0 room" width="154.43" height="341.67"/>
+            <path d="M1342,37v340.67h-153.43V37H1342 M1343,36h-155.43v342.67H1343V36L1343,36z"/>
+        </g>
+        <g>
+            <rect x="645.67" y="277.5" class="st0 room" width="499.11" height="100.67"/>
+            <path d="M1144.28,278v99.67H646.17V278H1144.28 M1145.28,277H645.17v101.67h500.11V277L1145.28,277z"/>
+        </g>
+        <g>
+            <rect x="310.5" y="328.5" class="st0 room" width="203.06" height="374.29"/>
+            <path d="M513.06,329v373.29H311V329H513.06 M514.06,328H310v375.29h204.06V328L514.06,328z"/>
+        </g>
+        <g>
+            <rect x="1004.5" y="425.5" class="st0 room" width="154" height="45"/>
+            <path d="M1158,426v44h-153v-44H1158 M1159,425h-155v46h155V425L1159,425z"/>
+        </g>
+        <g>
+            <rect x="1639.5" y="425.5" class="st0 room" width="230" height="598"/>
+            <path d="M1869,426v597h-229V426H1869 M1870,425h-231v599h231V425L1870,425z"/>
+        </g>
+        <rect x="87.5" y="801.5" class="st1 room" width="223" height="223"/>
         <g id="Layer_2" class="st6">
             <g class="st7">
                 <path d="M1131.29,1123.94v91.91H435.46v-91.91H1131.29 M1132.29,1122.94H434.46v93.91h697.83V1122.94L1132.29,1122.94z"/>
@@ -208,12 +336,9 @@
         <g id="Layer_12" class="pathway">
             <polyline class="st2" points="1003.71,1002.39 1003.71,951.75 1227.89,952.1 1228.5,518.5 1279,518.5 	"/>
         </g>
-        <g id="Text">
-            <text transform="matrix(1 0 0 1 1245.7139 998)" class="st4 st5">CLINIC</text>
-            <text transform="matrix(1 0 0 1 1142.8574 998.4287)" class="st4 st5">OFFICE</text>
-            <text transform="matrix(1 0 0 1 1071.1426 998.7139)" class="st4 st5">REGISTRAR</text>
-        </g>
+        
         </svg>
+        
    
 
     </div>
